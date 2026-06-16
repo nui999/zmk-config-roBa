@@ -154,7 +154,9 @@
 &trans     &trans          &trans          &trans           &trans     &trans      &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings =
+                <&inc_dec_kp LC(C_AC_SCROLL_UP) LC(C_AC_SCROLL_DOWN)>,
+                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         MOUSE {
