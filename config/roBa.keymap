@@ -39,7 +39,13 @@
         alt_tab: alt_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LALT &kp TAB>, <&macro_pause_for_release>, <&kp>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
 
             label = "ALT_TAB";
         };
@@ -72,10 +78,10 @@
 
         NUM-kigou {
             bindings = <
-&kp NON_US_BACKSLASH  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp UNDER                       &kp QMARK  &kp EXCLAMATION        &kp AT_SIGN   &kp TILDE  &kp PLUS
-&kp SLASH             &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp COMMA   &trans      &trans  &kp SEMI   &kp COLON              &kp ASTERISK  &kp HASH   &kp MINUS
-&kp KP_NUMBER_0       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &trans      &trans  &kp LPAR   &kp RIGHT_PARENTHESIS  &kp PRCNT     &kp AMPS   &kp EQUAL
-&trans                &trans           &trans           &trans           &trans      &trans      &trans  &trans                                                     &trans
+&kp INT_YEN      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp UNDER                       &kp QMARK  &kp EXCLAMATION        &kp AT_SIGN   &kp TILDE  &kp PLUS
+&kp SLASH        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp COMMA   &trans      &trans  &kp SEMI   &kp COLON              &kp ASTERISK  &kp HASH   &kp MINUS
+&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &trans      &trans  &kp LPAR   &kp RIGHT_PARENTHESIS  &kp PRCNT     &kp AMPS   &kp EQUAL
+&trans           &trans           &trans           &trans           &trans      &trans      &trans  &trans                                                     &trans
             >;
         };
 
@@ -90,10 +96,10 @@
 
         ARROW-kinou {
             bindings = <
-&kp PG_UP  &trans          &kp UP_ARROW    &trans           &kp PG_DN                      &trans  &trans                  &kp LG(UP_ARROW)    &trans             &trans
-&kp HOME   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END    &trans      &trans  &trans  &kp LS(LG(LEFT_ARROW))  &kp LG(DOWN_ARROW)  &kp LS(LG(RIGHT))  &trans
-&trans     &trans          &trans          &trans           &trans     &trans      &trans  &trans  &trans                  &trans              &trans             &trans
-&trans     &trans          &trans          &trans           &trans     &trans      &trans  &trans                                                                 &trans
+&kp PG_UP  &trans          &kp UP_ARROW    &trans           &kp PG_DN                      &trans  &trans  &trans  &trans  &trans
+&kp HOME   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END    &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans          &trans          &trans           &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans          &trans          &trans           &trans     &trans      &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -103,17 +109,17 @@
             bindings = <
 &trans  &trans                  &kp LG(UP_ARROW)    &trans                   &trans                      &trans  &trans    &trans  &trans    &trans
 &trans  &kp LS(LG(LEFT_ARROW))  &kp LG(DOWN_ARROW)  &kp LS(LG(RIGHT_ARROW))  &trans  &trans      &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
-&trans  &trans                  &kp LA(TAB)         &trans                   &trans  &trans      &trans  &trans  &mkp MB4  &trans  &mkp MB5  &trans
+&trans  &trans                  &alt_tab            &trans                   &trans  &trans      &trans  &trans  &mkp MB4  &trans  &mkp MB5  &trans
 &trans  &trans                  &trans              &trans                   &to 0   &trans      &trans  &trans                              &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB4  &trans  &mkp MB5  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
             >;
         };
 
