@@ -155,7 +155,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp LC(C_AC_SCROLL_UP) LC(C_AC_SCROLL_DOWN)>,
+                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>,
                 <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
