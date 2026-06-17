@@ -91,6 +91,16 @@
             bindings = <&none &kp N2 &kp N8 &kp N0 &kp N1 &kp N5 &kp N0 &kp N0>;
             label = "FIRST";
         };
+
+        double_muhen: double_muhen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LS(INTERNATIONAL_5)>,
+                <&kp LS(INTERNATIONAL_5)>;
+    label = "DOUBLE_MUHEN";
+        };
+
     };
 
     behaviors {
@@ -102,6 +112,16 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+ht_muhen: ht_muhen {
+    compatible = "zmk,behavior-hold-tap";
+    label = "HT_MUHEN";
+    bindings = <&mo>, <&double_muhen>;
+    #binding-cells = <2>;
+    tapping-term-ms = <200>;
+    flavor = "tap-preferred";
+};
+
     };
 
     keymap {
