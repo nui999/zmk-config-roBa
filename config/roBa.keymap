@@ -176,8 +176,8 @@
 
         ARROW {
             bindings = <
-&trans    &trans          &kp UP_ARROW    &trans           &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&kp HOME  &trans          &kp UP_ARROW    &trans           &trans                       &trans  &trans  &trans  &trans  &trans
+&kp END   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans    &trans          &trans          &trans           &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans    &trans          &trans          &trans           &trans   &trans      &trans  &trans                          &trans
             >;
