@@ -39,14 +39,14 @@
         muhen_to0: muhen_to0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &kp LS(INTERNATIONAL_5) &kp LS(INTERNATIONAL_5)>;
+            bindings = <&kp LS(INTERNATIONAL_5) &kp LS(INTERNATIONAL_5) &to 0>;
             label = "MUHEN_TO0";
         };
 
         kana_to0: kana_to0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &kp INTERNATIONAL_2>;
+            bindings = <&kp INTERNATIONAL_2 &to 0>;
             label = "KANA_TO0";
         };
 
@@ -206,7 +206,7 @@
 &kp HOME  &kp LG(UP_ARROW)  &kp UP_ARROW            &kp LG(DOWN_ARROW)  &kp PG_UP                          &trans          &trans    &msc SCRL_UP    &trans    &trans
 &kp END   &kp LEFT_ARROW    &kp DOWN_ARROW          &kp RIGHT_ARROW     &kp PAGE_DOWN  &trans      &trans  &msc SCRL_LEFT  &mkp MB1  &msc SCRL_DOWN  &mkp MB2  &msc SCRL_RIGHT
 &trans    &trans            &kp LS(LG(LEFT_ARROW))  &trans              &trans         &trans      &trans  &trans          &mkp MB4  &trans          &mkp MB5  &trans
-&trans    &trans            &trans                  &to 0               &trans         &to 0       &trans  &trans                                              &trans
+&trans    &trans            &trans                  &muhen_to0          &trans         &to 0       &trans  &trans                                              &trans
             >;
 
             sensor-bindings =
