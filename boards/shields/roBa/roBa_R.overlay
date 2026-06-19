@@ -1,4 +1,4 @@
-#include <input/processors.dtsi>
+
 #include "roBa.dtsi"
 
 &default_transform {
@@ -15,23 +15,7 @@
             ;
 };
 
-/ {
-    trackball_listener {
-        status = "okay";
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
 
-         // スクロール速度調整（デフォは速すぎるため減速）
-        // 1/4に設定中。速さ調整は zip_scroll_scaler の分母を変える
-        // 遅すぎ→1 2や1 3、まだ速い→1 6や1 8
-        scroller {
-            layers = <5>;
-            input-processors =
-                <&zip_xy_to_scroll_mapper>,
-               <&zip_scroll_scaler 1 4>;
-        };
-    };
-};
 
 &pinctrl {
     spi0_default: spi0_default {
