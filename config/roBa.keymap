@@ -156,18 +156,14 @@
 &mt LSHIFT Z  &kp X         &kp C         &kp V          &kp B        &ht_alt_tab 0 LC(V)             &mt LG(D) F8       &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &kp LCTRL     &kp LEFT_WIN  &kp LEFT_ALT  &ht_muhen 2 0  &lt 5 SPACE  &lt 3 INT_KATAKANAHIRAGANA      &kp BACKSPACE      &lt 1 ENTER                             &kp DEL
             >;
-
-            sensor-bindings =
-                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>,
-                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         NUM-kigou {
             bindings = <
-&kp INT_YEN      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp UNDER                       &kp EXCLAMATION  &kp HASH               &kp PERCENT  &kp AMPERSAND  &kp EQUAL
-&kp SLASH        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp COMMA   &trans      &trans  &kp SEMI         &kp COLON              &kp PLUS     &kp ASTERISK   &kp MINUS
-&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &trans      &trans  &kp LPAR         &kp RIGHT_PARENTHESIS  &kp AT_SIGN  &kp TILDE      &kp QUESTION
-&trans           &trans           &trans           &trans           &trans      &trans      &trans  &trans                                                              &trans
+&kp INT_YEN      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LS(NON_US_BACKSLASH)                      &kp EXCLAMATION  &kp HASH               &kp PERCENT  &kp AMPERSAND  &kp EQUAL
+&kp SLASH        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp COMMA                 &trans      &trans  &kp SEMI         &kp COLON              &kp PLUS     &kp ASTERISK   &kp MINUS
+&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD                &trans      &trans  &kp LPAR         &kp RIGHT_PARENTHESIS  &kp AT_SIGN  &kp TILDE      &kp QUESTION
+&trans           &trans           &trans           &trans           &trans                    &trans      &trans  &trans                                                              &trans
             >;
         };
 
