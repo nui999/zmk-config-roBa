@@ -82,7 +82,7 @@
         buhin: buhin {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(X) &kp N0 &kp N0 &kp N0 &kp N0 &kp N0 &kp N0 &kp N0>;
+            bindings = <&none &kp NUMBER_0 &kp N0 &kp N0 &kp N0 &kp N0 &kp N0 &kp N0 &kp N0>;
             label = "BUHIN";
         };
 
