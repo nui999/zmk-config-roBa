@@ -240,7 +240,7 @@
             >;
         };
 
-        ARROW {
+        comand {
             bindings = <
 &trans  &trans          &kp UP_ARROW    &trans           &trans                      &trans          &trans    &msc SCRL_UP    &trans    &trans
 &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans      &trans  &msc SCRL_LEFT  &mkp MB1  &msc SCRL_DOWN  &mkp MB2  &msc SCRL_RIGHT
@@ -251,14 +251,14 @@
 
         MOUSE {
             bindings = <
-&trans  &kp LC(Z)  &kp LG(UP_ARROW)        &kp LC(Y)  &trans                      &trans          &trans    &msc SCRL_UP    &trans    &trans
-&trans  &mkp MB4   &kp LG(LS(LEFT_ARROW))  &mkp MB5   &trans  &trans      &trans  &msc SCRL_LEFT  &mkp MB1  &msc SCRL_DOWN  &mkp MB2  &msc SCRL_RIGHT
-&trans  &trans     &kp LG(DOWN_ARROW)      &trans     &trans  &trans      &trans  &trans          &trans    &trans          &trans    &trans
-&trans  &trans     &trans                  &trans     &trans  &trans      &trans  &trans                                              &trans
+&trans  &trans    &kp LG(UP_ARROW)        &trans    &trans                      &trans          &trans    &msc SCRL_UP    &trans    &trans
+&trans  &mkp MB4  &kp LG(LS(LEFT_ARROW))  &mkp MB5  &trans  &trans      &trans  &msc SCRL_LEFT  &mkp MB1  &msc SCRL_DOWN  &mkp MB2  &msc SCRL_RIGHT
+&trans  &trans    &kp LG(DOWN_ARROW)      &trans    &trans  &trans      &trans  &trans          &trans    &trans          &trans    &trans
+&trans  &trans    &trans                  &trans    &trans  &trans      &trans  &trans                                              &trans
             >;
         };
 
-        SCROLL {
+        SCROLL-arrow {
             bindings = <
 &trans  &trans          &kp UP_ARROW    &trans           &trans                      &trans          &trans    &kp LC(KP_PLUS)  &trans    &trans
 &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans      &trans  &msc SCRL_LEFT  &mkp MB1  &kp LC(MINUS)    &mkp MB2  &msc SCRL_RIGHT
