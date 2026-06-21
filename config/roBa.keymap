@@ -224,10 +224,10 @@
 
         NUM-kigou {
             bindings = <
-&kp INT_YEN      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &under                          &kp EXCLAMATION  &kp HASH               &kp PERCENT       &kp LS(NUMBER_6)  &kp LS(MINUS)
-&kp KP_SLASH     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp COMMA   &trans      &trans  &kp SEMI         &kp LS(DOUBLE_QUOTES)  &kp KP_PLUS       &kp PLUS          &kp MINUS
-&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &trans      &trans  &kp LS(N8)       &kp LS(N9)             &kp LEFT_BRACKET  &kp KP_ASTERISK   &kp QUESTION
-&trans           &trans           &trans           &trans           &trans      &trans      &trans  &trans                                                                      &trans
+&kp INT_YEN      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &under                          &kp EXCLAMATION  &kp HASH          &kp PERCENT       &kp LS(NUMBER_6)  &kp LS(MINUS)
+&kp KP_SLASH     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp COMMA   &trans      &trans  &kp SEMI         &kp SINGLE_QUOTE  &kp KP_PLUS       &kp PLUS          &kp MINUS
+&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &trans      &trans  &kp LS(N8)       &kp LS(N9)        &kp LEFT_BRACKET  &kp KP_ASTERISK   &kp QUESTION
+&trans           &trans           &trans           &trans           &trans      &trans      &trans  &trans                                                                 &trans
             >;
         };
 
