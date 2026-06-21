@@ -29,9 +29,9 @@
     combos {
         compatible = "zmk,combos";
 
-        mouse {
+        sa {
             bindings = <&none>;
-            key-positions = <0 1 12 2 3 13 11 10 24 7 4 14 18 17 19 20 21 30 32>;
+            key-positions = <1 11 2 12 24 13 3 17 18 20 19 21 7>;
         };
     };
 
