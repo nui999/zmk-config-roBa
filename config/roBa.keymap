@@ -302,10 +302,10 @@
 
         comand {
             bindings = <
-&trans  &trans     &kp LC(F)  &trans     &trans                      &trans          &trans    &msc SCRL_UP    &trans    &trans
-&trans  &kp LC(Z)  &kp LC(A)  &kp LC(Y)  &trans  &trans      &trans  &msc SCRL_LEFT  &mkp MB1  &msc SCRL_DOWN  &mkp MB2  &msc SCRL_RIGHT
-&trans  &trans     &trans     &trans     &trans  &trans      &trans  &trans          &trans    &trans          &trans    &trans
-&trans  &trans     &trans     &trans     &trans  &trans      &trans  &trans                                              &trans
+&trans  &trans     &kp LC(F)  &trans     &trans                      &trans  &trans    &msc SCRL_UP    &trans    &trans
+&trans  &kp LC(Z)  &kp LC(A)  &kp LC(Y)  &trans  &trans      &trans  &trans  &mkp MB1  &msc SCRL_DOWN  &mkp MB2  &trans
+&trans  &trans     &trans     &trans     &trans  &trans      &trans  &trans  &trans    &trans          &trans    &trans
+&trans  &trans     &trans     &trans     &trans  &trans      &trans  &trans                                      &trans
             >;
         };
 
