@@ -29,9 +29,9 @@
     combos {
         compatible = "zmk,combos";
 
-        sa {
+        mou {
             bindings = <&none>;
-            key-positions = <1 11 2 12 24 13 3 17 18 20 19 21 7>;
+            key-positions = <11 12 13 2 24 18 19 20 7>;
         };
     };
 
