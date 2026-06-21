@@ -229,7 +229,7 @@
             bindings = <
 &trans  &kp LC(Z)       &kp UP_ARROW    &kp LC(Y)        &trans                      &trans          &trans    &msc SCRL_UP    &trans    &trans
 &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans      &trans  &msc SCRL_LEFT  &mkp MB1  &msc SCRL_DOWN  &mkp MB2  &msc SCRL_RIGHT
-&trans  &trans          &trans          &trans           &trans  &trans      &trans  &trans          &mkp MB4  &trans          &mkp MB5  &trans
+&trans  &trans          &trans          &trans           &trans  &trans      &trans  &trans          &trans    &trans          &trans    &trans
 &trans  &trans          &trans          &trans           &trans  &trans      &trans  &trans                                              &trans
             >;
         };
