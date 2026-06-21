@@ -9,6 +9,8 @@
     quick-tap-ms = <0>;
 };
 
+&trackball {
+    scroll-layers = <5>;
 
     // arrows {
     //     layers = <3>;
@@ -21,6 +23,8 @@
     //     wait-ms = <5>;
     //     tap-ms = <5>;
     // };
+};
+
 / {
     combos { compatible = "zmk,combos"; };
 
