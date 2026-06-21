@@ -120,6 +120,28 @@
             bindings = <&kp LS(INTERNATIONAL_5) &kp LS(INTERNATIONAL_5)>;
             label = "DOUBLE_MUHEN";
         };
+muhen_hold: muhen_hold {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings =
+        <&kp LS(INTERNATIONAL_5)>,
+        <&kp LS(INTERNATIONAL_5)>,
+        <&to 2>,
+        <&macro_pause_for_release>,
+        <&to 0>;
+    label = "MUHEN_HOLD";
+};
+
+henkan_hold: henkan_hold {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings =
+        <&kp INTERNATIONAL_2>,
+        <&to 3>,
+        <&macro_pause_for_release>,
+        <&to 0>;
+    label = "HENKAN_HOLD";
+};
     };
 
     behaviors {
@@ -151,6 +173,25 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
+ht_muhen_mouse: ht_muhen_mouse {
+    compatible = "zmk,behavior-hold-tap";
+    label = "HT_MUHEN_MOUSE";
+    bindings = <&muhen_hold>, <&muhen_to0>;
+
+    #binding-cells = <2>;
+    tapping-term-ms = <200>;
+    flavor = "tap-preferred";
+};
+
+ht_henkan_mouse: ht_henkan_mouse {
+    compatible = "zmk,behavior-hold-tap";
+    label = "HT_HENKAN_MOUSE";
+    bindings = <&henkan_hold>, <&kana_to0>;
+
+    #binding-cells = <2>;
+    tapping-term-ms = <200>;
+    flavor = "tap-preferred";
+};
     };
 
     keymap {
@@ -192,14 +233,14 @@
             >;
         };
 
-        MOUSE {
-            bindings = <
+       MOUSE {
+    bindings = <
 &kp HOME  &kp LG(UP_ARROW)  &kp UP_ARROW            &kp LG(DOWN_ARROW)  &kp PG_UP                             &trans          &trans    &msc SCRL_UP    &trans    &trans
 &kp END   &kp LEFT_ARROW    &kp DOWN_ARROW          &kp RIGHT_ARROW     &kp PAGE_DOWN  &trans         &trans  &msc SCRL_LEFT  &mkp MB1  &msc SCRL_DOWN  &mkp MB2  &msc SCRL_RIGHT
 &trans    &trans            &kp LS(LG(LEFT_ARROW))  &trans              &trans         &trans         &trans  &trans          &mkp MB4  &trans          &mkp MB5  &trans
-&trans    &trans            &trans                  &muhen_to0          &trans         &kana_to0      &trans  &trans                                              &trans
-            >;
-        };
+&trans    &trans            &trans                  &ht_muhen_mouse 0 0 &trans         &ht_henkan_mouse 0 0   &trans          &trans                                              &trans
+    >;
+};
 
         SCROLL {
             bindings = <
