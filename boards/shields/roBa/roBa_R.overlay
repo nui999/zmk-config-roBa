@@ -11,11 +11,17 @@
             , <&gpio0 10 GPIO_ACTIVE_HIGH>
             ;
 };
+#include <input/processors.dtsi>
+
 / {
     trackball_listener {
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
+
+        input-processors = <&zip_temp_layer 4 100000>;
+
+       
     };
 };
 &pinctrl {
