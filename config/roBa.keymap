@@ -217,6 +217,36 @@
 
             label = "ENMARK";
         };
+
+        hidarikakko: hidarikakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_0 &kp KP_NUMBER_4>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "HIDARIKAKKO";
+        };
+
+        migikakko: migikakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_0 &kp KP_NUMBER_5>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "MIGIKAKKO";
+        };
     };
 
     behaviors {
@@ -300,12 +330,12 @@
             >;
         };
 
-        comand {
+        shortcut-kakko {
             bindings = <
-&trans  &trans     &kp LC(F)  &trans     &trans                      &trans  &trans    &msc SCRL_UP    &trans    &trans
-&trans  &kp LC(Z)  &kp LC(A)  &kp LC(Y)  &trans  &trans      &trans  &trans  &mkp MB1  &msc SCRL_DOWN  &mkp MB2  &trans
-&trans  &trans     &trans     &trans     &trans  &trans      &trans  &trans  &trans    &trans          &trans    &trans
-&trans  &trans     &trans     &trans     &trans  &trans      &trans  &trans                                      &trans
+&trans  &trans     &kp LC(F)  &trans     &trans                      &trans  &trans      &trans      &trans  &trans
+&trans  &kp LC(Z)  &kp LC(A)  &kp LC(Y)  &trans  &trans      &trans  &trans  &kp LS(N8)  &kp LS(N9)  &trans  &trans
+&trans  &trans     &trans     &trans     &trans  &trans      &trans  &trans  &trans      &trans      &trans  &trans
+&trans  &trans     &trans     &trans     &trans  &trans      &trans  &trans                                  &trans
             >;
         };
 
@@ -318,7 +348,7 @@
             >;
         };
 
-        SCROLL-arrow {
+        Contorol {
             bindings = <
 &trans   &trans          &kp UP_ARROW    &trans           &trans                      &trans  &trans          &kp LC(KP_PLUS)  &trans           &trans
 &kp TAB  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans      &trans  &trans  &msc SCRL_LEFT  &kp LC(MINUS)    &msc SCRL_RIGHT  &trans
