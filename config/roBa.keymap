@@ -31,7 +31,7 @@
 
         mou {
             bindings = <&none>;
-            key-positions = <11 12 13 2 24 18 19 20 7>;
+            key-positions = <11 12 13 2 24 18 19 20 7 10>;
         };
     };
 
@@ -371,10 +371,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans    &kp LG(UP_ARROW)        &trans    &trans                      &trans  &trans    &msc SCRL_UP    &trans    &trans
-&trans  &mkp MB4  &kp LG(LS(LEFT_ARROW))  &mkp MB5  &trans  &trans      &trans  &trans  &mkp MB1  &msc SCRL_DOWN  &mkp MB2  &trans
-&trans  &trans    &kp LG(DOWN_ARROW)      &trans    &trans  &trans      &trans  &trans  &trans    &trans          &trans    &trans
-&trans  &trans    &trans                  &trans    &trans  &trans      &trans  &trans                                      &trans
+&trans      &trans    &kp LG(UP_ARROW)        &trans    &trans                      &trans  &trans    &msc SCRL_UP    &trans    &trans
+&kp LA(F4)  &mkp MB4  &kp LG(LS(LEFT_ARROW))  &mkp MB5  &trans  &trans      &trans  &trans  &mkp MB1  &msc SCRL_DOWN  &mkp MB2  &trans
+&trans      &trans    &kp LG(DOWN_ARROW)      &trans    &trans  &trans      &trans  &trans  &trans    &trans          &trans    &trans
+&trans      &trans    &trans                  &trans    &trans  &trans      &trans  &trans                                      &trans
             >;
         };
 
