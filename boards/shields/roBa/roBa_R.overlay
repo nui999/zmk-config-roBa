@@ -16,7 +16,7 @@
 &zip_temp_layer {
     require-prior-idle-ms = <200>;
     excluded-positions = <
-        11 12 13 2 24 18 19 20 7
+        11 12 13 2 24 18 19 20 7 10
     >;
 };
 
