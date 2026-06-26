@@ -369,9 +369,9 @@
 
         NUM-kakko {
             bindings = <
-&kp INT3   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans                            &kp EXCLAMATION  &kp QUESTION      &trans  &trans  &trans
-&kp TAB    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans     &trans         &trans  &kp LS(N8)       &kp SINGLE_QUOTE  &trans  &trans  &trans
-&kp SLASH  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans     &trans         &trans  &kp SEMICOLON    &kp APOSTROPHE    &trans  &trans  &trans
+&kp INT3   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans                            &kp EXCLAMATION  &kp QUESTION  &trans      &trans  &trans
+&kp TAB    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans     &trans         &trans  &trans           &kp LS(N8)    &kp LS(N9)  &trans  &trans
+&kp SLASH  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans     &trans         &trans  &trans           &kp SEMI      &kp APOS    &trans  &trans
 &under     &trans           &trans           &kp PERIOD       &kp KP_N0  &kp COMMA      &trans  &trans                                             &trans
             >;
         };
