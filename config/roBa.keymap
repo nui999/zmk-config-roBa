@@ -388,7 +388,7 @@
         shortcut-kigou2 {
             bindings = <
 &trans  &trans     &kp LC(F)  &trans     &trans                      &trans  &kp HASH  &kp PERCENT  &kp LS(NUMBER_6)  &kp LS(MINUS)
-&trans  &kp LC(Z)  &kp LC(A)  &kp LC(Y)  &trans  &trans      &trans  &trans  &trans    &kp KP_PLUS  &kp PLUS          &kp MINUS
+&trans  &kp LC(Z)  &kp LC(A)  &kp LC(Y)  &trans  &trans      &trans  &trans  &trans    &kp KP_PLUS  &trans            &trans
 &trans  &trans     &trans     &trans     &trans  &trans      &trans  &trans  &trans    &trans       &kp KP_ASTERISK   &trans
 &trans  &trans     &trans     &trans     &trans  &trans      &trans  &trans                                           &trans
             >;
