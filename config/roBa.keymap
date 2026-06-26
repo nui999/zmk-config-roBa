@@ -369,10 +369,10 @@
 
         NUM-kigou {
             bindings = <
-&kp INT3   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans                            &kp EXCLAMATION  &kp HASH          &kp PERCENT       &kp LS(NUMBER_6)  &kp LS(MINUS)
-&kp TAB    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans     &trans         &trans  &kp SEMI         &kp SINGLE_QUOTE  &kp KP_PLUS       &kp PLUS          &kp MINUS
-&kp SLASH  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans     &trans         &trans  &kp LS(N8)       &kp LS(N9)        &kp LEFT_BRACKET  &kp KP_ASTERISK   &kp QUESTION
-&under     &trans           &trans           &kp PERIOD       &kp KP_N0  &kp COMMA      &trans  &trans                                                                 &trans
+&kp INT3   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans                            &hidarikakko  &migikakko        &trans            &trans            &trans
+&kp TAB    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans     &trans         &trans  &kp LS(N8)    &kp SINGLE_QUOTE  &trans            &trans            &trans
+&kp SLASH  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans     &trans         &trans  &hidarikaiwa  &migikaiwa        &trans            &trans            &trans
+&under     &trans           &trans           &kp PERIOD       &kp KP_N0  &kp COMMA      &trans  &trans                                                              &trans
             >;
         };
 
@@ -387,10 +387,10 @@
 
         shortcut-kakko {
             bindings = <
-&trans  &trans     &kp LC(F)  &trans     &trans                      &trans  &hidarikakko  &migikakko  &trans  &trans
-&trans  &kp LC(Z)  &kp LC(A)  &kp LC(Y)  &trans  &trans      &trans  &trans  &kp LS(N8)    &kp LS(N9)  &trans  &trans
-&trans  &trans     &trans     &trans     &trans  &trans      &trans  &trans  &hidarikaiwa  &migikaiwa  &trans  &trans
-&trans  &trans     &trans     &trans     &trans  &trans      &trans  &trans                                    &trans
+&trans  &trans     &kp LC(F)  &trans     &trans                      &kp EXCLAMATION  &kp HASH          &kp PERCENT       &kp LS(NUMBER_6)  &kp LS(MINUS)
+&trans  &kp LC(Z)  &kp LC(A)  &kp LC(Y)  &trans  &trans      &trans  &kp SEMI         &kp SINGLE_QUOTE  &kp KP_PLUS       &kp PLUS          &kp MINUS
+&trans  &trans     &trans     &trans     &trans  &trans      &trans  &kp LS(N8)       &kp LS(N9)        &kp LEFT_BRACKET  &kp KP_ASTERISK   &kp QUESTION
+&trans  &trans     &trans     &trans     &trans  &trans      &trans  &trans                                                                  &trans
             >;
         };
 
