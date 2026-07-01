@@ -71,16 +71,21 @@
 
             label = "ALT_TAB_HOLD";
         };
-ctrl_w: ctrl_w {
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings =
-        <&macro_press &kp LCTRL>,
-        <&macro_tap &kp W>,
-        <&macro_pause_for_release>,
-        <&macro_release &kp LCTRL>;
-    label = "CTRL_W";
-};
+
+        ctrl_w: ctrl_w {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp W>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "CTRL_W";
+        };
 
         hosyu: hosyu {
             compatible = "zmk,behavior-macro";
@@ -314,14 +319,15 @@ ctrl_w: ctrl_w {
             tapping-term-ms = <200>;
         };
 
-ht_ctrl_w: ht_ctrl_w {
-    compatible = "zmk,behavior-hold-tap";
-    label = "HT_CTRL_W";
-    bindings = <&ctrl_w>, <&kp>;
-    #binding-cells = <2>;
-    tapping-term-ms = <200>;
-    flavor = "tap-preferred";
-};
+        ht_ctrl_w: ht_ctrl_w {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_CTRL_W";
+            bindings = <&ctrl_w>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
 
         ht_alt_tab: ht_alt_tab {
             compatible = "zmk,behavior-hold-tap";
@@ -415,10 +421,10 @@ ht_ctrl_w: ht_ctrl_w {
 
         MOUSE {
             bindings = <
-&trans            &trans    &kp LG(UP_ARROW)              &trans    &trans                      &trans  &trans    &msc SCRL_UP    &trans    &trans
-&ht_alt_f4 0 TAB  &mkp MB4  &mt LC(W) LG(LS(LEFT_ARROW))  &mkp MB5  &trans  &trans      &trans  &trans  &mkp MB1  &msc SCRL_DOWN  &mkp MB2  &trans
-&trans            &trans    &kp LG(DOWN_ARROW)            &trans    &trans  &trans      &trans  &trans  &trans    &trans          &trans    &trans
-&trans            &trans    &trans                        &trans    &trans  &trans      &trans  &trans                                      &trans
+&trans            &trans    &kp LG(UP_ARROW)                 &trans    &trans                      &trans  &trans    &msc SCRL_UP    &trans    &trans
+&ht_alt_f4 0 TAB  &mkp MB4  &ht_ctrl_w 0 LG(LS(LEFT_ARROW))  &mkp MB5  &trans  &trans      &trans  &trans  &mkp MB1  &msc SCRL_DOWN  &mkp MB2  &trans
+&trans            &trans    &kp LG(DOWN_ARROW)               &trans    &trans  &trans      &trans  &trans  &trans    &trans          &trans    &trans
+&trans            &trans    &trans                           &trans    &trans  &trans      &trans  &trans                                      &trans
             >;
         };
 
