@@ -70,6 +70,7 @@
                 <&kp LEFT_ALT>;
 
             label = "ALT_TAB_HOLD";
+        };
 ctrl_w: ctrl_w {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
@@ -80,7 +81,6 @@ ctrl_w: ctrl_w {
         <&macro_release &kp LCTRL>;
     label = "CTRL_W";
 };
-        };
 
         hosyu: hosyu {
             compatible = "zmk,behavior-macro";
@@ -314,6 +314,15 @@ ctrl_w: ctrl_w {
             tapping-term-ms = <200>;
         };
 
+ht_ctrl_w: ht_ctrl_w {
+    compatible = "zmk,behavior-hold-tap";
+    label = "HT_CTRL_W";
+    bindings = <&ctrl_w>, <&kp>;
+    #binding-cells = <2>;
+    tapping-term-ms = <200>;
+    flavor = "tap-preferred";
+};
+
         ht_alt_tab: ht_alt_tab {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_ALT_TAB";
@@ -363,14 +372,6 @@ ctrl_w: ctrl_w {
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
-ht_ctrl_w: ht_ctrl_w {
-    compatible = "zmk,behavior-hold-tap";
-    label = "HT_CTRL_W";
-    bindings = <&ctrl_w>, <&kp>;
-    #binding-cells = <2>;
-    tapping-term-ms = <200>;
-    flavor = "tap-preferred";
-};
     };
 
     keymap {
