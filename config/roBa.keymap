@@ -421,10 +421,10 @@
 
         MOUSE {
             bindings = <
-&trans            &kp LS(LG(LEFT))  &kp LG(UP_ARROW)    &kp LS(LG(RIGHT_ARROW))  &trans                      &trans  &trans    &msc SCRL_UP    &trans    &trans
-&ht_alt_f4 0 TAB  &mkp MB4          &kp LC(W)           &mkp MB5                 &trans  &trans      &trans  &trans  &mkp MB1  &msc SCRL_DOWN  &mkp MB2  &trans
-&trans            &trans            &kp LG(DOWN_ARROW)  &trans                   &trans  &trans      &trans  &trans  &trans    &trans          &trans    &trans
-&trans            &trans            &trans              &trans                   &trans  &trans      &trans  &trans                                      &trans
+&trans            &kp LG(LS(LEFT_ARROW))  &kp LG(UP_ARROW)      &kp LS(LG(RIGHT_ARROW))  &trans                      &trans  &trans    &msc SCRL_UP    &trans    &trans
+&ht_alt_f4 0 TAB  &mkp MB4                &mt LC(W) LEFT_SHIFT  &mkp MB5                 &trans  &trans      &trans  &trans  &mkp MB1  &msc SCRL_DOWN  &mkp MB2  &trans
+&trans            &trans                  &kp LG(DOWN_ARROW)    &trans                   &trans  &trans      &trans  &trans  &trans    &trans          &trans    &trans
+&trans            &trans                  &trans                &trans                   &trans  &trans      &trans  &trans                                      &trans
             >;
         };
 
