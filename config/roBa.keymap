@@ -31,7 +31,7 @@
 
         mou {
             bindings = <&none>;
-            key-positions = <11 12 13 2 24 18 19 20 7 10>;
+            key-positions = <11 12 13 2 24 18 19 20 7 10 1 3>;
         };
     };
 
