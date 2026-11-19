@@ -385,10 +385,10 @@
 
         default_layer {
             bindings = <
-&mt ESC Q     &kp W         &kp E         &kp R        &kp T                                                   &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A         &kp S         &kp D         &kp F        &kp G        &mt LC(X) LC(C)          &mt LS(LG(S)) F7  &kp H        &kp J  &kp K      &kp L    &mt PLUS MINUS
-&mt LSHIFT Z  &kp X         &kp C         &kp V        &lt 6 B      &ht_alt_tab 0 LC(V)      &mt LG(D) F8      &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LCTRL     &kp LEFT_GUI  &kp LEFT_ALT  &muhen_hold  &lt 5 SPACE  &henkan_hold             &kp BACKSPACE     &lt 1 ENTER                             &kp DEL
+&mt ESC Q     &kp W         &kp E         &kp R        &kp T                                                     &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A         &kp S         &kp D         &kp F        &kp G        &mt (LC(X)) LC(C)          &mt LS(LG(S)) F7  &kp H        &kp J  &kp K      &kp L    &mt PLUS MINUS
+&mt LSHIFT Z  &kp X         &kp C         &kp V        &lt 6 B      &ht_alt_tab (0) LC(V)      &mt LG(D) F8      &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp LCTRL     &kp LEFT_GUI  &kp LEFT_ALT  &muhen_hold  &lt 5 SPACE  &henkan_hold               &kp BACKSPACE     &lt 1 ENTER                             &kp DEL
             >;
         };
 
@@ -421,10 +421,10 @@
 
         MOUSE {
             bindings = <
-&trans            &kp LG(LS(LEFT_ARROW))  &kp LG(UP_ARROW)      &kp LS(LG(RIGHT_ARROW))  &trans                      &trans  &trans    &msc SCRL_UP    &trans    &trans
-&ht_alt_f4 0 TAB  &mkp MB4                &mt LC(W) LEFT_SHIFT  &mkp MB5                 &trans  &trans      &trans  &trans  &mkp MB1  &msc SCRL_DOWN  &mkp MB2  &trans
-&trans            &trans                  &kp LG(DOWN_ARROW)    &trans                   &trans  &trans      &trans  &trans  &trans    &trans          &trans    &trans
-&trans            &trans                  &trans                &trans                   &trans  &trans      &trans  &trans                                      &trans
+&trans            &mt LC(W) LSHIFT  &kp LG(UP_ARROW)        &trans    &trans                      &trans  &trans    &msc SCRL_UP    &trans    &trans
+&ht_alt_f4 0 TAB  &mkp MB4          &kp LG(LS(LEFT_ARROW))  &mkp MB5  &trans  &trans      &trans  &trans  &mkp MB1  &msc SCRL_DOWN  &mkp MB2  &trans
+&trans            &trans            &kp LG(DOWN_ARROW)      &trans    &trans  &trans      &trans  &trans  &trans    &trans          &trans    &trans
+&trans            &trans            &trans                  &trans    &trans  &trans      &trans  &trans                                      &trans
             >;
         };
 
